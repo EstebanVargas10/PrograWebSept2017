@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+     $(function(){
+        $("button").click(function(){
+            $("p").hide("slow", function(){
+                alert("El p está escondido")
+            });
+        });
+     });
+     </script>
+
+</head>
+
+<body>
+    <button>Esconder</button> <br>
+    <p>Esto es un parrafo</p>
+
+</body>
+
+</html>

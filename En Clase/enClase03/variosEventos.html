@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "red");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "blue");
+
+                },
+                click: function () {
+                    $(this).css("background-color", "green");
+
+                }
+            })
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <p>Click o mover el mouse sobre este parrafo</p>
+
+</body>
+
+</html>
