@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Planetas</title>
+    <meta charset="utf-8">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(function(){
+        init();
+    });
+        
+    function init(){
+        var planet = document.getElementById("planetaverde");
+        planet.innerHTML = "Alerta Roja: Tenemos un incendio!";
+    }
+    
+    </script>
+
+</head>
+
+<body>
+    <h1>Planeta Verde</h1>
+    <p id="planetaverde">Todo bien</p>
+ 
+    <h1>Planeta Rojo</h1>
+    <p id="planetarojo">Nada que reportar</p>
+     
+    <h1>Planeta azul</h1>
+    <p id="planetaazul">Todo los sistemas fuincinan bien</p>
+    
+
+</body>
+
+</html>

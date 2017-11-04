@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Ramdomizer</title>
+    <meta charset="utf-8">
+    <meta>
+    <style>
+        body {
+            font-family: arial, verdana, sans-serif;
+        }
+    </style>
+
+    <script> 
+        function crearFrase() {
+            var palabras1 = ["24/7", "Multiplataforma", "30,000 pies", "A-A", "Windows"]
+            var palabras2 = ["Poder", "Valores", "Oriente", "Alinieado", "Occidente"]
+            var palabras3 = ["Procesos", "Soluciones", "Puntos", "Estrategia", "Vision"]
+
+            var rand1 = Math.floor(Math.random() * palabras1.length);
+            var rand2 = Math.floor(Math.random() * palabras2.length);
+            var rand3 = Math.floor(Math.random() * palabras3.length);
+            var frase = palabras1[rand1] + " " + palabras2[rand2] + "  " + palabras3[rand3];
+            var elementoFrase = document.getElementById("frase");
+            elementoFrase.innerHTML = frase;
+        }
+
+        window.onload = crearFrase;
+    </script>
+
+</head>
+
+<body>
+    <h1>Ramdomizer dice:</h1>
+    <p id="frase"></p>
+
+</body>
+
+</html>
