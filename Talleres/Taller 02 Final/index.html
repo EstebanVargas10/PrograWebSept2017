@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+   </body>
+   <script type="text/javascript">
+      document.body.innerHTML = ("<main> </main>");
+      document.getElementsByTagName("main")[0].innerHTML = ('<div id="container"></div>');
+      var container = document.getElementById("container");
+      container.innerHTML = ('<header id="main"></header>');
+      document.getElementById("main").innerHTML = ('<h1>LAB 02 | Esteban Vargas Aguero</h1>');
+      container.innerHTML += ("<nav></nav>");
+      document.getElementsByTagName("nav")[0].innerHTML = ('<ul></ul>');
+      document.getElementsByTagName("ul")[0].innerHTML = ('<li></li>');
+      document.getElementsByTagName("ul")[0].innerHTML += ('<li></li>');
+      document.getElementsByTagName("ul")[0].innerHTML += ('<li></li>');
+      document.getElementsByTagName("ul")[0].innerHTML += ('<li></li>');
+      document.getElementsByTagName("li")[0].innerHTML = ('<a href="page01.html">Segunda pate</a>');
+      document.getElementsByTagName("li")[1].innerHTML = ('<a href="#">Products</a>');
+      document.getElementsByTagName("li")[2].innerHTML = ('<a href="#">Services</a>');
+      document.getElementsByTagName("li")[3].innerHTML = ('<a href="#">Contacts</a>');
+      container.innerHTML += ('<section id="main"></section');
+      document.getElementsByTagName("section")[0].innerHTML = ('<article></article>');
+      document.getElementsByTagName("article")[0].innerHTML = ('<header></header>');
+      document.getElementsByTagName("header")[1].innerHTML = ('<h2>Parrafo I</h2>');
+      document.getElementsByTagName("article")[0].innerHTML += ('<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex metus. Integer gravida est non est dignissim, et ultricies magna sollicitudin. Praesent placerat at dui in pharetra. Curabitur venenatis auctor sem, vel lobortis lorem dictum vitae. Proin ultrices nisi aliquam dui tempus efficitur sed non sapien. Duis nec nunc quis metus elementum malesuada in eget odio. Cras sit amet erat mauris. Suspendisse potenti. Nunc id sollicitudin turpis, nec commodo mi.</p>');
+      document.getElementsByTagName("article")[0].innerHTML += ('<h2>Parrafo II</h2>');
+      document.getElementsByTagName("article")[0].innerHTML += ('<p>Pellentesque sagittis maximus mollis. Praesent vitae neque euismod, vulputate odio ut, mattis felis. Proin diam justo, posuere ut metus sed, dapibus efficitur neque. Donec in ligula condimentum massa venenatis aliquam. Etiam convallis quis nisi ut imperdiet. Suspendisse vestibulum est vitae velit egestas vehicula. Etiam commodo eros nunc, eget iaculis dui dictum ultricies. Curabitur interdum lectus eget orci accumsan, sed finibus tellus condimentum. Duis tempor dictum pellentesque. Ut eget feugiat ipsum. Suspendisse sem risus, viverra vitae tristique et, scelerisque vel orci. Sed in varius augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>');
+      container.innerHTML += ('<aside></aside>');
+      document.getElementsByTagName("aside")[0].innerHTML = ('<h3>Parrafo III</h3>');
+      document.getElementsByTagName("aside")[0].innerHTML += ('<p>Vestibulum pellentesque congue sem tempor feugiat. Sed nulla mauris, convallis et lacus non, luctus fringilla magna. Nunc vel posuere ante. Sed lobortis est sit amet ipsum dictum, eget laoreet metus laoreet. Etiam elementum accumsan neque, vel consequat velit venenatis id. Sed ornare nibh id enim fringilla, nec dictum libero semper. Integer ac elit dapibus, facilisis ante at, ultrices dolor. Praesent finibus efficitur commodo. Morbi iaculis congue libero, sit amet pretium dolor tempus interdum. Duis tempus a sem quis mattis. Praesent scelerisque odio eget tellus fringilla, ac efficitur erat tincidunt. Morbi facilisis sem sit amet cursus vulputate.</p>');
+      container.innerHTML += ('<div class="clearfix"></div>');
+      container.innerHTML += ('<footer>Copyright &copy; Esteban Vargas Aguero | Nov 2017</footer>');
+      container.style.width = "85%";
+      container.style.background = "#fff";
+      container.style.margin = "19px auto";
+      container.style.overflow = "auto";
+      container.style.borderRadius = "10px";
+      var body = document.body.style;
+      body.background = "#ccc";
+      body.fontFamily = "arial";
+      body.fontSize = "13px";
+      var ul = document.getElementsByTagName("ul")[0];
+      ul.style.padding = "0";
+      ul.style.margin = "0";
+      ul.style.listStyle = "none";
+      var main = document.getElementById("main");
+      main.style.padding = "10px";
+      main.style.background = "#f4f4f4";
+      var nav = document.getElementsByTagName("nav");
+      var i;
+      for (i = 0; i < nav.length; i++) {
+          nav[i].style.padding = "10px";
+      	nav[i].style.background = "#aaa";
+      	nav[i].style.overflow = "hidden";
+      }
+      document.getElementsByTagName("main")[0].style.padding = "20px";
+      var li = document.getElementsByTagName("li");
+      var j;
+      for (j = 0; j < li.length; j++) {
+          li[j].style.float = "left";
+      	li[j].style.padding = "10px 10px 0 10px";
+      	li[j].style.textDecoration = "none";
+      }
+      var a = document.getElementsByTagName("a");
+      j = 0;
+      for (j = 0; j < a.length; j++) {
+          a[j].style.color = "#fff";
+      	a[j].style.fontWeight = "bold";
+      	a[j].style.textDecoration = "none";
+      	a[j].addEventListener("mouseover", function() {this.style.color = "#000";});	
+      	a[j].addEventListener("mouseout", function() {this.style.color = "#fff";});
+      }
+      var sectionMain = document.getElementsByTagName("article")[0];
+      sectionMain.parentElement.style.width = "70%";
+      sectionMain.parentElement.style.float = "left";		
+      var aside = document.getElementsByTagName("aside")[0];	
+      aside.style.width = "20%";
+      aside.style.float = "right";
+      document.getElementsByTagName("footer")[0].style.padding = "10px";
+      document.getElementsByTagName("footer")[0].style.textAlign = "center";
+      document.getElementsByClassName("clearfix")[0].style.zoom = 1;
+      document.getElementsByClassName("clearfix")[0].style.content = " ";
+      document.getElementsByClassName("clearfix")[0].style.display = "table";
+      document.getElementsByClassName("clearfix")[0].style.clear = "both";
+   </script>
+</html>
