@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mouseenter").mouseenter(function(){
+                $("#mouseenter").css("background-color", "yellow");
+            });
+            $("#mouseenter").mouseleave(function(){
+                $("#mouseenter").css("background-color", "lightgray");
+            });
+        });
+
+
+        i = 0;
+$(document).ready(function(){
+    $("#totalcara").keypress(function(){
+        $("span").text(i += 1);
+    });
+});
+
+
+$(document).ready(function(){
+    $("#focustext").blur(function(){
+        alert("El campo de texto ya va a peder el enfoque");
+    });
+});
+
+
+
+x = 0;
+$(document).ready(function(){
+    $(window).resize(function(){
+        $("#resizetest").text(x += 1);
+    });
+});
+    </script>
+    <title>Even more examples</title>
+</head>
+
+<body>
+    <div>
+        <p id="mouseenter">Mouse encima de aqui, (mouseEnter/Leave)</p>
+    </div>
+
+    <br>
+    <div>
+            
+Contador de caracteres: <input id="totalcara" type="text">
+
+<p>Total: <span>0</span></p>
+    </div>
+
+
+
+    <div>
+        Para el uso de focus: <input id="focustext" type="text">
+        <p>Después de salir del campo de texto, el cuadro perderá el enfoque</p>
+    </div>
+
+
+
+    <div >
+        <p>Cambie el tamaño de la venta para notar cuantas veces ha cambiado el tamaño. Total: <span id="resizetest">0</span> veces.</p>
+      
+       
+    </div>
+
+
+</body>
+
+</html>

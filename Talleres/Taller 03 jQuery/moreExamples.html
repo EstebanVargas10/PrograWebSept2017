@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btnfade").click(function () {
+                $("#div1").fadeTo("slow", 0.15);
+                $("#div2").fadeTo("slow", 0.4);
+                $("#div3").fadeTo("slow", 0.7);
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("#btnani").click(function () {
+                var div = $("#divani");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btnchain").click(function () {
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+            });
+        });
+
+    </script>
+    <title>More Examples</title>
+</head>
+
+<body>
+    <div>
+        <a href="ScrollToTop.html">Scroll to top (Click)</a>
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <div>
+            <p id="p1">Chaining </p>
+            <button id="btnchain">Click</button>
+    </div>
+
+
+
+    <div>
+        <p>Click y desaparezco</p>
+
+        <button id="hide">Invisible</button>
+        <button id="show">Mostrar</button>
+    </div>
+
+    <div>
+        <p>Esto es un Fade, va a bajar la opacidad</p>
+        <button id="btnfade"> Click para Fade</button>
+        <br>
+        <br>
+        <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+        <br>
+        <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+        <br>
+        <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    </div>
+
+
+
+
+
+    <div>
+        <button id="btnani">Animación</button>
+        <p>Click para ver como se anima el cuadro </p>
+        <div id="divani" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    </div>
+    <br>
+
+
+
+</body>
+
+</html>
